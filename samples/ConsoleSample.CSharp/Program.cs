@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using ActiveLogin.Identity.Swedish;
@@ -167,7 +167,7 @@ namespace ConsoleSample
         private static void Sample_ParseUserInput()
         {
             WriteHeader("What is your (Swedish) Personal Identity Number or Coordination Number?");
-            var userRawPersonalIdentityNumber = Console.ReadLine();
+            var userRawPersonalIdentityNumber = Console.ReadLine() ?? String.Empty;
             WriteIndividualIdentityNumberInfo(userRawPersonalIdentityNumber);
         }
 
